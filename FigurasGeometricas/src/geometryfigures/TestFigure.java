@@ -11,11 +11,12 @@ public class TestFigure {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(1, 2, 3, 4);
-        Point point = new Point(4, 5);
         
-        System.out.println(rectangle);
+        Point point = new Point(4, 5);
+        Rectangle rectangle = new Rectangle(point, point, point, point);
         System.out.println(point);
+        System.out.println(rectangle);
+        
     }
     
 }
